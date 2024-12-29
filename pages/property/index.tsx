@@ -6,6 +6,7 @@ const PropertyList: NextPage = () => {
   return (
     <>
       <Container>PROPERTY LIST</Container>
+      
     </>
   );
 };
