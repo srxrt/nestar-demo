@@ -2,56 +2,52 @@ import { East, West } from "@mui/icons-material";
 import { Box, Stack } from "@mui/material";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import TrendPropertyCard from "./TrendPropertyCard";
+import TopPropertyCard from "./TopPropertiesCard";
 
-const TopProperties = () => {
-  const [trendProperties, setTrendProperties] = useState<number[]>([
-    1, 2, 3, 4, 5, 6, 7,
-  ]);
+const TopProperties = ({ initialInput, ...props }: any) => {
+  const [topProperties, setTopProperties] = useState<number[]>(initialInput);
 
   return (
-    <Stack className="popular-properties">
+    <Stack className="top-properties">
       <Stack className="container">
         <Stack className="info-box">
           <Box className="left">
-            <span>Popular Properties</span> <p>Popularity is based on views</p>
+            <span>Top Properties</span> <p>Check out our Top Properties</p>
           </Box>
           <Box className="right">
             <div className="pagination-box">
-              <West className="swiper-trend-prev" />
-              <div className="swiper-trend-pagination"></div>
-              <East className="swiper-trend-next" />
+              <West className="swiper-top-prev" />
+              <div className="swiper-top-pagination"></div>
+              <East className="swiper-top-next" />
             </div>
           </Box>
         </Stack>
         <Stack className="card-box">
-          {trendProperties.length === 0 ? (
-            <Box className="empty-list">Trends Empty</Box>
-          ) : (
-            <Swiper
-              className="trend-property-swiper"
-              slidesPerView={"auto"}
-              spaceBetween={15}
-              navigation={{
-                nextEl: ".swiper-trend-next",
-                prevEl: ".swiper-trend-prev",
-              }}
-              pagination={{
-                el: ".swiper-trend-pagination",
-              }}
-            >
-              {trendProperties.map((property, index) => {
-                return (
-                  <SwiperSlide key={index} className="trend-property-slide">
-                    <TrendPropertyCard />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          )}
+          <Swiper
+            className="top-property-swiper"
+            slidesPerView={"auto"}
+            spaceBetween={15}
+            navigation={{
+              nextEl: ".swiper-top-next",
+              prevEl: ".swiper-top-prev",
+            }}
+            pagination={{
+              el: ".swiper-top-pagination",
+            }}
+          >
+            {topProperties.map((property, index) => {
+              return (
+                <SwiperSlide key={index} className="top-property-slide">
+                  <TopPropertyCard />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </Stack>
       </Stack>
     </Stack>
   );
 };
+
+TopProperties.defaultProps = { initialInput: [1, 2, 3, 4, 5, 6, 7] };
 export default TopProperties;

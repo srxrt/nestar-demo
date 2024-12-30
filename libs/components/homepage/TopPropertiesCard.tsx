@@ -3,7 +3,7 @@ import { Box, Divider, IconButton, Stack, Typography } from "@mui/material";
 
 const TopPropertyCard = () => {
   return (
-    <Stack className="trend-card-box">
+    <Stack className="top-card-box">
       <Box
         className="card-img"
         style={{ backgroundImage: `url(/img/banner/types/apartment.webp)` }}
