@@ -2,7 +2,6 @@ import { ArrowBackIosNew, East, West } from "@mui/icons-material";
 import { Box, Stack } from "@mui/material";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import TopPropertyCard from "./TopPropertiesCard";
 import Link from "next/link";
 import TopAgentCard from "./TopAgentCard";
 
