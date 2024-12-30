@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import TrendProperties from "@/libs/components/homepage/TrendProperties";
 import TopProperties from "@/libs/components/homepage/TopProperties";
 import PopularProperties from "@/libs/components/homepage/PopularProperties";
+import Advertisement from "@/libs/components/homepage/Advertisement";
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
             <PopularProperties />
           </Stack>
           <Stack>
-            <Stack className="container">Advertisement</Stack>
+            <Advertisement />
           </Stack>
           <Stack>
             <TopProperties />
