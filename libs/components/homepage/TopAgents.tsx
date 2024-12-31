@@ -1,4 +1,4 @@
-import { ArrowBackIosNew, East, West } from "@mui/icons-material";
+import { ArrowBackIosNew } from "@mui/icons-material";
 import { Box, Stack } from "@mui/material";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +7,6 @@ import TopAgentCard from "./TopAgentCard";
 
 const TopAgents = ({ initialInput, ...props }: any) => {
   const [topAgents, setTopAgents] = useState<number[]>(initialInput);
-  console.log("initialInput", initialInput);
 
   return (
     <Stack className="top-agents">

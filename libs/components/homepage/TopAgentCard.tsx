@@ -4,7 +4,7 @@ const TopAgentCard = () => {
   return (
     <Stack className="top-agent-card">
       <img src="/img/profile/girl.svg" alt="" />
-      <strong>Girl</strong>
+      <strong>Angela</strong>
       <span>AGENT</span>
     </Stack>
   );
