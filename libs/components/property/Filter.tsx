@@ -96,24 +96,24 @@ const Filter = () => {
         <Typography className="title">Rooms</Typography>
         <Stack className="button-group">
           <Button
-            sx={{ borderRadius: "12px 0 0 12px", border: "1px solid #b9b9b9" }}
+            sx={{ borderRadius: "12px 0 0 12px", border: "1px solid #181a20" }}
           >
             Any
           </Button>
           <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             1
           </Button>
-          <Button sx={{ borderRadius: 0, border: "1px solid #181a20" }}>
+          <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             2
           </Button>
           <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             3
           </Button>
-          <Button sx={{ borderRadius: 0, border: "1px solid #181a20" }}>
+          <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             4
           </Button>
           <Button
-            sx={{ borderRadius: "12px 0 0 12px", border: "1px solid #b9b9b9" }}
+            sx={{ borderRadius: "0 12px 12px 0", border: "1px solid #b9b9b9" }}
           >
             5+
           </Button>
@@ -124,30 +124,24 @@ const Filter = () => {
         <Typography className="title">Bedrooms</Typography>
         <Stack className="button-group">
           <Button
-            sx={{
-              borderRadius: "12px 0 0 12px",
-              border: "1px solid #b9b9b9",
-            }}
+            sx={{ borderRadius: "12px 0 0 12px", border: "1px solid #181a20" }}
           >
             Any
           </Button>
           <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             1
           </Button>
-          <Button sx={{ borderRadius: 0, border: "1px solid #181a20" }}>
+          <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             2
           </Button>
           <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             3
           </Button>
-          <Button sx={{ borderRadius: 0, border: "1px solid #181a20" }}>
+          <Button sx={{ borderRadius: 0, border: "1px solid #b9b9b9" }}>
             4
           </Button>
           <Button
-            sx={{
-              borderRadius: "12px 0 0 12px",
-              border: "1px solid #b9b9b9",
-            }}
+            sx={{ borderRadius: "0 12px 12px 0", border: "1px solid #b9b9b9" }}
           >
             5+
           </Button>
