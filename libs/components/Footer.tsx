@@ -9,7 +9,6 @@ import useDeviceDetect from "../hooks/useDeviceDetect";
 
 const Footer = () => {
   const device = useDeviceDetect();
-  console.log(device);
 
   if (device === "mobile") {
     return <Stack className="footer-container">Footer Mobile</Stack>;
