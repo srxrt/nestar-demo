@@ -2,9 +2,7 @@ import { Refresh } from "@mui/icons-material";
 import {
   Button,
   Checkbox,
-  FormControl,
-  IconButton,
-  InputLabel,
+  FormControl, IconButton, InputLabel,
   MenuItem,
   OutlinedInput,
   Select,
