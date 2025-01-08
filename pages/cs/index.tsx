@@ -1,12 +1,23 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import { Stack } from "@mui/material";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
+import { Container, Stack } from "@mui/material";
 import { NextPage } from "next";
 
 const CS: NextPage = () => {
-  return (
-    <div style={{ margin: "20px 0px" }}>
-      <Stack className="container">Customer Service </Stack>
-    </div>
-  );
+  const device = useDeviceDetect();
+
+  if (device === "mobile") {
+    return (
+      <>
+        <Container>CUSTOMER SUPPORT MOBILE</Container>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Container>CUSTOMER SUPPORT </Container>
+      </>
+    );
+  }
 };
 export default withLayoutBasic(CS);
